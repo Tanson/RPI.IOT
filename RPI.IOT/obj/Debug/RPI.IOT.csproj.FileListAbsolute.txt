@@ -1,0 +1,5 @@
+D:\banana pi\项目\RPI.IOT\RPI.IOT\obj\Debug\RPI.IOT.csprojResolveAssemblyReference.cache
+D:\banana pi\项目\RPI.IOT\RPI.IOT\bin\Debug\RPI.IOT.dll
+D:\banana pi\项目\RPI.IOT\RPI.IOT\bin\Debug\RPI.IOT.pdb
+D:\banana pi\项目\RPI.IOT\RPI.IOT\obj\Debug\RPI.IOT.dll
+D:\banana pi\项目\RPI.IOT\RPI.IOT\obj\Debug\RPI.IOT.pdb

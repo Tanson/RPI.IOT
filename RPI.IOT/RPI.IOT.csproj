@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CB732DB-3FF5-45B3-B315-75DB8732BEE7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPI.IOT</RootNamespace>
+    <AssemblyName>RPI.IOT</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="GPIO\Behaviors\BlinkBehavior.cs" />
+    <Compile Include="GPIO\Behaviors\ChaserBehavior.cs" />
+    <Compile Include="GPIO\Behaviors\PatternBehavior.cs" />
+    <Compile Include="GPIO\Behaviors\PinsBehavior.cs" />
+    <Compile Include="GPIO\Behaviors\PinsBehaviorExtensionMethods.cs" />
+    <Compile Include="GPIO\Configuration\GpioConnectionConfigurationSection.cs" />
+    <Compile Include="GPIO\ConnectedPin.cs" />
+    <Compile Include="GPIO\ConnectedPins.cs" />
+    <Compile Include="GPIO\ConnectorPin.cs" />
+    <Compile Include="GPIO\FileGpioConnectionDriver.cs" />
+    <Compile Include="GPIO\FileGpioHandle.cs" />
+    <Compile Include="GPIO\GpioBinaryPinExtensionMethods.cs" />
+    <Compile Include="GPIO\GpioConnection.cs" />
+    <Compile Include="GPIO\GpioConnectionDriver.cs" />
+    <Compile Include="GPIO\GpioConnectionDriverCapabilities.cs" />
+    <Compile Include="GPIO\GpioConnectionDriverExtensionMethods.cs" />
+    <Compile Include="GPIO\GpioConnectionSettings.cs" />
+    <Compile Include="GPIO\GpioInputBinaryPin.cs" />
+    <Compile Include="GPIO\GpioInputOutputBinaryPin.cs" />
+    <Compile Include="GPIO\GpioOutputBinaryPin.cs" />
+    <Compile Include="GPIO\IGpioConnectionDriver.cs" />
+    <Compile Include="GPIO\InputPinConfiguration.cs" />
+    <Compile Include="GPIO\Interop.cs" />
+    <Compile Include="GPIO\MemoryGpioConnectionDriver.cs" />
+    <Compile Include="GPIO\OutputPinConfiguration.cs" />
+    <Compile Include="GPIO\PinConfiguration.cs" />
+    <Compile Include="GPIO\PinConfigurationExtensionMethods.cs" />
+    <Compile Include="GPIO\PinDetectedEdges.cs" />
+    <Compile Include="GPIO\PinDirection.cs" />
+    <Compile Include="GPIO\PinMapping.cs" />
+    <Compile Include="GPIO\PinResistor.cs" />
+    <Compile Include="GPIO\PinStatusEventArgs.cs" />
+    <Compile Include="GPIO\ProcessorPin.cs" />
+    <Compile Include="GPIO\ProcessorPinExtensionMethods.cs" />
+    <Compile Include="GPIO\ProcessorPins.cs" />
+    <Compile Include="GPIO\SwitchInputPinConfiguration.cs" />
+    <Compile Include="I2C\I2cAction.cs" />
+    <Compile Include="I2C\I2cDeviceConnection.cs" />
+    <Compile Include="I2C\I2cDriver.cs" />
+    <Compile Include="I2C\I2cReadAction.cs" />
+    <Compile Include="I2C\I2cTransaction.cs" />
+    <Compile Include="I2C\I2cWriteAction.cs" />
+    <Compile Include="I2C\Interop.cs" />
+    <Compile Include="Interop\ControlDevice.cs" />
+    <Compile Include="Interop\EnumTypes\MemoryFlags.cs" />
+    <Compile Include="Interop\EnumTypes\MemoryProtection.cs" />
+    <Compile Include="Interop\EnumTypes\UnixFileMode.cs" />
+    <Compile Include="Interop\ErrNum.cs" />
+    <Compile Include="Interop\Exceptions\MemoryMapFailedException.cs" />
+    <Compile Include="Interop\Exceptions\MemoryUnmapFailedException.cs" />
+    <Compile Include="Interop\IControlDevice.cs" />
+    <Compile Include="Interop\IFile.cs" />
+    <Compile Include="Interop\IMemory.cs" />
+    <Compile Include="Interop\ManagedMemory.cs" />
+    <Compile Include="Interop\MemoryMap.cs" />
+    <Compile Include="Interop\MemorySubset.cs" />
+    <Compile Include="Interop\UnixFile.cs" />
+    <Compile Include="Interop\UnmanagedMemory.cs" />
+    <Compile Include="IO\AnalogValue.cs" />
+    <Compile Include="IO\BinaryPinExtensionMethods.cs" />
+    <Compile Include="IO\ByteExtensionMethods.cs" />
+    <Compile Include="IO\IInputAnalogPin.cs" />
+    <Compile Include="IO\IInputBinaryPin.cs" />
+    <Compile Include="IO\IInputOutputBinaryPin.cs" />
+    <Compile Include="IO\IOutputAnalogPin.cs" />
+    <Compile Include="IO\IOutputBinaryPin.cs" />
+    <Compile Include="IO\StringExtensionMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPISystem\Board.cs" />
+    <Compile Include="RPISystem\ConnectorPinout.cs" />
+    <Compile Include="RPISystem\Model.cs" />
+    <Compile Include="RPISystem\Processor.cs" />
+    <Compile Include="RPISystem\Timers\HighResolutionTimer.cs" />
+    <Compile Include="RPISystem\Timers\Interop.cs" />
+    <Compile Include="RPISystem\Timers\ITimer.cs" />
+    <Compile Include="RPISystem\Timers\StandardTimer.cs" />
+    <Compile Include="RPISystem\Timers\Timer.cs" />
+    <Compile Include="RPISystem\Timers\TimeSpanUtility.cs" />
+    <Compile Include="SerialPeripheralInterface\Endianness.cs" />
+    <Compile Include="SerialPeripheralInterface\EnumTypes\SpiMode.cs" />
+    <Compile Include="SerialPeripheralInterface\EnumTypes\SpiTransferMode.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\ReadonlyTransferBufferException.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\SendSpiMessageException.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\SetBitsPerWordException.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\SetMaxSpeedException.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\SetSpiModeException.cs" />
+    <Compile Include="SerialPeripheralInterface\Exceptions\WriteOnlyTransferBufferException.cs" />
+    <Compile Include="SerialPeripheralInterface\INativeSpiConnection.cs" />
+    <Compile Include="SerialPeripheralInterface\Interop\Interop.cs" />
+    <Compile Include="SerialPeripheralInterface\Interop\SpiTransferControlStructure.cs" />
+    <Compile Include="SerialPeripheralInterface\ISpiControlDevice.cs" />
+    <Compile Include="SerialPeripheralInterface\ISpiTransferBuffer.cs" />
+    <Compile Include="SerialPeripheralInterface\ISpiTransferBufferCollection.cs" />
+    <Compile Include="SerialPeripheralInterface\NativeSpiConnection.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiConnection.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiConnectionSettings.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiControlDevice.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiSlaveSelectionContext.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiTransferBuffer.cs" />
+    <Compile Include="SerialPeripheralInterface\SpiTransferBufferCollection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GPIO\packages.config" />
+    <None Include="I2C\packages.config" />
+    <None Include="Interop\Raspberry.IO.Interop.csproj.DotSettings" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

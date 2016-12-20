@@ -1,0 +1,16 @@
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.Scheduler.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.Scheduler.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.IOT.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.Sensor.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\UnitsNet.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.Core.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.IOT.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\RPI.Sensor.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.Core.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.Core.xml
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.xml
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.csprojResolveAssemblyReference.cache
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.pdb

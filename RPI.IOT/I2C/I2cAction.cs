@@ -1,0 +1,19 @@
+﻿namespace RPI.IOT.I2C
+{
+    using System;
+
+    public abstract class I2cAction
+    {
+        protected I2cAction(byte[] buffer)
+        {
+            if (buffer == null)
+            {
+                throw new ArgumentNullException("buffer");
+            }
+
+            Buffer = buffer;
+        }
+
+        public byte[] Buffer { get; private set; }
+    }
+}
