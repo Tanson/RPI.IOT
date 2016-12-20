@@ -95,3 +95,16 @@ D:\banana pi\项目\RPI.IOT\RPI.Web\bin\zh-Hans\Microsoft.Owin.Security.Microsof
 D:\banana pi\项目\RPI.IOT\RPI.Web\obj\Debug\RPI.Web.csprojResolveAssemblyReference.cache
 D:\banana pi\项目\RPI.IOT\RPI.Web\obj\Debug\RPI.Web.dll
 D:\banana pi\项目\RPI.IOT\RPI.Web\obj\Debug\RPI.Web.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.IOT.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.Scheduler.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.Sensor.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\UnitsNet.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.Core.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.dll
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.IOT.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.Scheduler.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\RPI.Sensor.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.Core.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.Core.xml
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Web\bin\Common.Logging.xml
