@@ -15,7 +15,7 @@ namespace RPI.Scheduler.Sensor
         {
             get
             {
-                return new I2cDriver(ProcessorPin.Pin02, ProcessorPin.Pin03);
+                return new I2cDriver(ConnectorPin.P1Pin03.ToProcessor(), ConnectorPin.P1Pin05.ToProcessor());
             }
         }
 
@@ -23,7 +23,7 @@ namespace RPI.Scheduler.Sensor
         {
             get
             {
-                return driver.Connect(0x68);
+                return driver.Connect(0x23);
             }
 
         }

@@ -31,9 +31,12 @@ namespace RPI.Sensor.Sensors.Light
         public double GetData()
         {
             Connection.Write(0x10);
-            var res = Connection.ReadByte();
+            UInt16 res = Connection.ReadByte();
+            return res;
             var data = ((res >> 8) & 0xff) | (res << 8) & 0xff00;
+           
             return Math.Round(data / (2 * 1.2), 2);
         }
+        
     }
 }

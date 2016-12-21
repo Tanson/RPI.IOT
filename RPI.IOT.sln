@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPI.Web", "RPI.Web\RPI.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPI.Scheduler", "RPI.Scheduler\RPI.Scheduler.csproj", "{2E561B3A-CAF1-4109-BDA1-FF08C7D6BDB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPI.IOT.Test", "RPI.IOT.Test\RPI.IOT.Test.csproj", "{422B9947-C2E4-474D-9272-9C3A0883FBA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2E561B3A-CAF1-4109-BDA1-FF08C7D6BDB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E561B3A-CAF1-4109-BDA1-FF08C7D6BDB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E561B3A-CAF1-4109-BDA1-FF08C7D6BDB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422B9947-C2E4-474D-9272-9C3A0883FBA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422B9947-C2E4-474D-9272-9C3A0883FBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422B9947-C2E4-474D-9272-9C3A0883FBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422B9947-C2E4-474D-9272-9C3A0883FBA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

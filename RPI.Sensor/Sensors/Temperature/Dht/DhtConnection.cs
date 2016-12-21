@@ -30,7 +30,7 @@ namespace RPI.Sensor.Sensors.Temperature.Dht
         private bool started;
 
         private static readonly TimeSpan timeout = TimeSpan.FromMilliseconds(100);
-        private static readonly TimeSpan bitSetUptime = new TimeSpan(10 * (26 +70) / 2); // 26µs for "0", 70µs for "1"
+        private static readonly TimeSpan bitSetUptime = new TimeSpan(10 * (26 +90) / 2); // 26µs for "0", 70µs for "1"
 
         #endregion
 
@@ -123,6 +123,8 @@ namespace RPI.Sensor.Sensors.Temperature.Dht
                 {
                     data = TryGetData();
                     data.AttemptCount = tryCount;
+                    if (data.RelativeHumidity.Percent > 100)
+                        data = null;
                 }
                 catch(Exception ex)
                 {

@@ -32,8 +32,10 @@ namespace RPI.Scheduler.Sensor
             using (var dhtConnection = new Dht11Connection(pin))
             {
                 var data = dhtConnection.GetData();
-                strTemplate = data.RelativeHumidity.Percent + "," + data.Temperature.DegreesCelsius + "," + data.AttemptCount;
-                
+                if(data!=null)
+                //strTemplate = data.RelativeHumidity.Percent + "," + data.Temperature.DegreesCelsius + "," + data.AttemptCount;
+                strTemplate = string.Format("{0:0.00}% humidity, {1:0.0}°C, {2} attempts", data.RelativeHumidity.Percent, data.Temperature.DegreesCelsius, data.AttemptCount);
+              
             }
             return (T)Convert.ChangeType(strTemplate, typeof(T)); ;
         }
