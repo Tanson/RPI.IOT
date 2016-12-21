@@ -1,4 +1,5 @@
 ﻿using RPI.IOT.I2C;
+using RPI.IOT.RPISystem.Timers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,12 +32,19 @@ namespace RPI.Sensor.Sensors.Light
         public double GetData()
         {
             Connection.Write(0x10);
-            UInt16 res = Connection.ReadByte();
-            return res;
-            var data = ((res >> 8) & 0xff) | (res << 8) & 0xff00;
-           
-            return Math.Round(data / (2 * 1.2), 2);
+            HighResolutionTimer.Sleep(TimeSpanUtility.FromMicroseconds(150 * 1000));
+            byte[] readBuf = Connection.Read(2);
+
+            var valf = readBuf[0] << 8;
+            valf |= readBuf[1];
+            return valf / 1.2 * (69 / 69) / 1;
+
+            // var valf = ((readBuf[0] << 8) | readBuf[1]) / 1.2;
+            // return valf;
+
+            // return Math.Round(valf / (2 * 1.2), 2);
+
         }
-        
+
     }
 }
