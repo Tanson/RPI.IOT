@@ -14,3 +14,8 @@ D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Common.Logging.xml
 D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.csprojResolveAssemblyReference.cache
 D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.dll
 D:\banana pi\项目\RPI.IOT\RPI.Scheduler\obj\Debug\RPI.Scheduler.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Quartz.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Quartz.pdb
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\Quartz.xml
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\System.Data.SQLite.dll
+D:\banana pi\项目\RPI.IOT\RPI.Scheduler\bin\Debug\System.Data.SQLite.xml
