@@ -39,5 +39,25 @@ namespace RPI.Scheduler.Sensor
             }
             return (T)Convert.ChangeType(strTemplate, typeof(T)); ;
         }
+        public string[] GetValue()
+        {
+            string[] datas=new string[3];
+            var driver = GpioConnectionSettings.GetBestDriver(GpioConnectionDriverCapabilities.CanChangePinDirectionRapidly);
+            using (var pin = driver.InOut(_pin))
+            using (var dhtConnection = new Dht11Connection(pin))
+            {
+                var data = dhtConnection.GetData();
+                if (data != null)
+                {
+                    datas[0] = data.Temperature.DegreesCelsius.ToString();
+                    datas[1] = data.RelativeHumidity.Percent.ToString();
+                    datas[2] = data.AttemptCount.ToString();
+                }
+                    //strTemplate = data.RelativeHumidity.Percent + "," + data.Temperature.DegreesCelsius + "," + data.AttemptCount;
+                  //  strTemplate = string.Format("{0:0.00}% humidity, {1:0.0}°C, {2} attempts", data.RelativeHumidity.Percent, data.Temperature.DegreesCelsius, data.AttemptCount);
+
+            }
+            return datas;
+        }
     }
 }

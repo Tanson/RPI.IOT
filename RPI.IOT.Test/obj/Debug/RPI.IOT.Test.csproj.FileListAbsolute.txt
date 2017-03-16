@@ -17,3 +17,6 @@ D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\bin\Debug\Common.Logging.xml
 D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\obj\Debug\RPI.IOT.Test.csprojResolveAssemblyReference.cache
 D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\obj\Debug\RPI.IOT.Test.exe
 D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\obj\Debug\RPI.IOT.Test.pdb
+D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\bin\Debug\Quartz.dll
+D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\bin\Debug\Quartz.pdb
+D:\banana pi\项目\RPI.IOT\RPI.IOT.Test\bin\Debug\Quartz.xml

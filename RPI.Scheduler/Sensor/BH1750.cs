@@ -30,6 +30,7 @@ namespace RPI.Scheduler.Sensor
         public T GetDate<T>()
         {
             BH1750Connection light = new BH1750Connection(i2cConnection);
+            light.SetOff();
             light.Reset();
             light.SetOn();
             return (T)Convert.ChangeType(light.GetData(), typeof(T));

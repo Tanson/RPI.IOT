@@ -1,0 +1,7 @@
+
+<DataConfig>
+  <DHT11PIN>12</DHT11PIN>
+  <HCSR501PIN>18</HCSR501PIN>
+  <PointName>客厅</PointName>
+  <Url>http://127.0.0.1:88/API/MonitorData.ashx?data={0}</Url>
+</DataConfig>

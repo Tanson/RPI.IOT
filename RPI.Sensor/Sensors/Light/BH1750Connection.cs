@@ -7,7 +7,13 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace RPI.Sensor.Sensors.Light
-{
+{/// <summary>
+ ///  sample:
+ ///   BH1750Connection light = new BH1750Connection(i2cConnection);
+    //            light.Reset();
+    //            light.SetOn();
+    //   var data=light.GetData();
+    /// </summary>
     public class BH1750Connection
     {
         public I2cDeviceConnection Connection { get; set; }
@@ -37,8 +43,8 @@ namespace RPI.Sensor.Sensors.Light
 
             var valf = readBuf[0] << 8;
             valf |= readBuf[1];
-            return valf / 1.2 * (69 / 69) / 1;
-
+            //  return valf / 1.2 * (69 / 69) / 1;
+            return valf;
             // var valf = ((readBuf[0] << 8) | readBuf[1]) / 1.2;
             // return valf;
 
